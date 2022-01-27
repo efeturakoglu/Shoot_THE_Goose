@@ -568,7 +568,7 @@ def render_menu(event):
     global level_point
     global wave
 
-    Play_Button = Button(Window,Cursor,350,200,50,250,(0,0,0),Text="Play")
+    Play_Button = Button(Window,Cursor,250,200,50,250,(255,255,255),Text="Play")
     Play_Button.Draw()
 
     if Play_Button.Collide(event):
