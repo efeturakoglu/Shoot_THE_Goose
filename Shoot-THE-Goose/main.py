@@ -578,6 +578,10 @@ def render_menu(event):
         point = 0
         level_point = 0
         ammo = 3
+        Dog_1.state = "search"
+        Dog_1.count = 0
+        Dog_1.X = 0
+        Dog_1.Y = 460
         
 
 
@@ -619,15 +623,13 @@ while 1:
     Cursor.Get()
     print(Clock.get_fps())
 
-    if health <= 0:
+    if health <= 0 or level_number > 5:
         Window.frame.blit(Background,(0,0))
         Window.frame.blit(Menu_background,(0,0))
         render_menu(Event)
-
+        generate()
         Cursor.Draw()
-
-
-
+        
         pygame.display.update()
 
     else:
