@@ -53,7 +53,7 @@ def level_generator(wave):
                 wave.append("+")
         
             
-
-for level in levels:
-    for wave in level:
-        level_generator(wave)
+def generate():
+    for level in levels:
+        for wave in level:
+            level_generator(wave)
